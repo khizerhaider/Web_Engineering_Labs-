@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .book-link {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .book-link:hover {
+            text-decoration: underline;
+        }
+
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #2c3e50;
+            margin: 10px 0;
+            font-family: Georgia, serif;
+            white-space: pre-wrap;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .genre-cell {
+            font-weight: bold;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>My Favorite Books Collection</h1>
+    </nav>
+
+    <table>
+        <tr>
+            <th>Genre</th>
+            <th>Book Details</th>
+        </tr>
+        <tr>
+            <td class="genre-cell">Fiction</td>
+            <td>
+                <h2><a href="https://www.goodreads.com/book/show/5907.The_Hobbit" class="book-link">The Hobbit</a></h2>
+                <p>By J.R.R. Tolkien</p>
+                <pre>"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort."</pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="genre-cell">Science Fiction</td>
+            <td>
+                <h2><a href="https://www.goodreads.com/book/show/44767458-dune" class="book-link">Dune</a></h2>
+                <p>By Frank Herbert</p>
+                <pre>"I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me."</pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="genre-cell">Mystery</td>
+            <td>
+                <h2><a href="https://www.goodreads.com/book/show/16299.And_Then_There_Were_None" class="book-link">And Then There Were None</a></h2>
+                <p>By Agatha Christie</p>
+                <pre>"In the midst of life, we are in death."</pre>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
