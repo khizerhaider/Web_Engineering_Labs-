@@ -6,9 +6,9 @@
     <title>Khizer</title>
 </head>
 <body>
-    <header style="display: flex;justify-content: space-around;">
+    <header style="display: flex;justify-content: space-around;background-color: #f0f0f0;">
         <h1>My portfolio</h1>
-        <nav>
+        <nav style="text-align: center; margin-top: 20px;">
             <ul style="list-style-type: none;  margin: 0;padding: 0;display: flex; gap: 30px; margin-top: 30px;">
                 <li><a href="">Home</a></li>
                 <li><a href="">Projects</a></li>
@@ -17,5 +17,70 @@
             </ul>
         </nav>
     </header>
-</body>
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px;">
+    <h2>About me</h2>
+    <p>Hello! My name is Khizer and I am a computer science student with a passion for technology and innovation. I am currently pursuing my degree at <Strong>NUST (National university of Sciences and Technology)</Strong> , where I have gained a solid foundation in programming, algorithms, and data structures.</p>
+    <p>In addition to my academic pursuits, I have also completed several internships and projects that have allowed me to apply my skills in real-world settings. I am particularly interested in web development
+    </div>
+    <div style="max-width: 800px;margin:0 auto;padding:20px;">
+        <h2>Experience</h2>
+        <ul>
+            <li><mark><strong>Software Engineer <em>(Remote)</em> | UpSkillers | Bahawalpur | Oct 2024 - Currently Working</strong></mark></li>
+            <li><strong>Software Engineer Intern <em>(Remote)</em> | UpSkillers | Bahawalpur |Sep 2024 - Oct 2024</strong></li>
+            <li><strong>Networking Engineer Intern <em>On-site</em> | Quetta Safe City Project | Quetta | July 2023 - Sep 2023</strong></li>
+        </ul>
+    </div>
+    <div style="max-width: 800px;margin:auto;padding:20px;">
+        <h2><strong>Labs</strong></h2>
+        <h3>Time</h3>
+        <time id="current-time"></time>
+        <h3>Canvas</h3>
+        <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000000;">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="Iphone_aud.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <h3>Video</h3>
+        <video width="320" height="240" controls>
+            <source src="tree.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h3>Form</h3>
+        <!--[if IE]>
+            <form>
+            <label for="nameIE">Name IE:</label><br>
+            <input type="text" id="nameIE" name="nameIE"><br><br>
+            <label for="emailIE">Email:</label><br>
+            <input type="email" id="emailIE" name="emailIE"><br><br>
+            <input type="submit" value="Submit">
+            </form>
+        <![endif]-->
+        <form >
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeElement = document.getElementById('current-time');
+            timeElement.setAttribute('datetime', now.toISOString())
+            timeElement.textContent = now.toLocaleTimeString();
+
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+    </body>
+    <footer style="text-align: center; padding: 20px; background-color: #f0f0f0; margin-top: 40px;">
+        <p>&copy; 2025 Khizer. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/syed-muhammad-khizer-haider-152792291/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/khizerhaider" target="_blank">GitHub</a>
+    </footer>
 </html>
