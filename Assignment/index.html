@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Student Registration Form</h1>
+  </header>
+
+  <main>
+    <section class="card">
+      <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required />
+
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required />
+
+          <label for="student-id">Student ID:</label>
+          <input type="text" id="student-id" name="student-id" required />
+
+          <label for="birth-date">Date of Birth:</label>
+          <input type="date" id="birth-date" name="birth-date" required />
+
+          <label for="gender">Gender:</label>
+          <div class="inline">
+            <label><input type="radio" name="gender" value="male" required /> Male</label>
+            <label><input type="radio" name="gender" value="female" required /> Female</label>
+          </div>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="tel">Phone Number:</label>
+          <input type="tel" id="tel" name="tel" required />
+
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Academic Information</legend>
+
+          <label for="Department">Department:</label>
+          <select id="Department" name="Department" required>
+            <optgroup label="Departments">
+              <option value="CS">CS</option>
+              <option value="AI">AI</option>
+              <option value="CE">CE</option>
+            </optgroup>
+          </select>
+
+          <label for="Year">Year:</label>
+          <select id="Year" name="Year" required>
+            <optgroup label="Year">
+              <option value="1st Year">1st Year</option>
+              <option value="2nd Year">2nd Year</option>
+              <option value="3rd Year">3rd Year</option>
+              <option value="4th Year">4th Year</option>
+            </optgroup>
+          </select>
+
+          <label>Enrollment Type:</label>
+          <div class="inline">
+            <label><input type="radio" name="enrollment-type" value="full-time" required /> Full-time</label>
+            <label><input type="radio" name="enrollment-type" value="part-time" required /> Part-time</label>
+          </div>
+
+          <label>Courses to Register:</label>
+          <div class="inline">
+            <label><input type="checkbox" name="courses" value="AI" /> AI</label>
+            <label><input type="checkbox" name="courses" value="Web" /> Web Engineering</label>
+            <label><input type="checkbox" name="courses" value="ML" /> Machine Learning</label>
+          </div>
+
+          <label for="campus">Preferred Campus:</label>
+          <input list="campus-list" id="campus" name="campus" required />
+          <datalist id="campus-list">
+            <option value="Main Campus">
+            <option value="Quetta Campus">
+            <option value="Risalpur Campus">
+            <option value="Karachi Campus">
+          </datalist>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Setup</legend>
+
+          <label for="photo">Upload Profile Photo:</label>
+          <input type="file" id="photo" name="photo" accept="image/*" required />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            pattern="(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 characters"
+            required
+          />
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required />
+
+          <label class="inline">
+            <input type="checkbox" id="agree" name="agree" required />
+            I agree to the terms and conditions
+          </label>
+
+          <div class="actions">
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
